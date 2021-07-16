@@ -7,13 +7,15 @@ import { bindCallback } from 'rxjs';
   styleUrls: ['./color.component.css']
 })
 export class ColorComponent implements OnInit {
-  color:String ="black";
+  color: any ;
   constructor() { }
 
   ngOnInit(): void {
   }
-  public changeColor(color: String){
-    this.color = color;
+  public changeColor(color1:any){
+    this.color = color1;
+    console.log(color1);
+  
   }
 
 }
