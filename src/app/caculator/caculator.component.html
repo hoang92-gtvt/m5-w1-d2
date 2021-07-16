@@ -1,0 +1,38 @@
+<p>caculator works!</p>
+<div>
+    <label for="number1">Toan hang mot</label><input  id="number1"  type="number" [(ngModel)]="number1">
+   
+</div>
+<div>
+    <label for="number2">Toan hang hai</label><input  id="number2" type="number" [(ngModel)]="number2">
+</div>
+<div>
+    <label>Toan tu</label>
+    <select #vs name="operator" (change)="getEquals(vs.value)">
+            <option *ngFor="let item of list"   [value]="item"   >{{item}}</option>
+    </select>
+</div>
+
+<div>
+    <label>Ketqua</label><input type="text" [value]="kq"  disabled>
+</div>
+
+
+<p>caculator works!</p>
+<div>
+    <label for="number3">Toan hang mot</label><input  id="number3"  type="number" [(ngModel)]="number1">
+   
+</div>
+<div>
+    <label for="number4">Toan hang hai</label><input  id="number4" type="number" [(ngModel)]="number2">
+</div>
+<div>
+    <label>Toan tu 2</label>
+    <select #vs2 name="operator2" (change)="getEquals2(vs2.value)">
+            <option *ngFor="let item of list"   [value]="item"   >{{item}}</option>
+    </select>
+</div>
+
+<div>
+    <label>Ketqua</label><input type="text" [value]="getEquals2(vs2.value)"  disabled>
+</div>
