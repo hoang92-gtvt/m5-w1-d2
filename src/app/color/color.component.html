@@ -1,0 +1,10 @@
+<p>color works!</p>
+<div>
+    <button #cl1 (click)="changeColor(cl1.value)" value="Black">Mau Den</button>
+    <button #cl2 (click)="changeColor(cl2.value)" value="Yellow">Mau Vang</button>
+    <button #cl3 (click)="changeColor(cl3.value)" value="Blue">Mau Xanh</button>
+    <button #cl4 (click)="changeColor(cl4.value)" value="Red">Mau Do</button>
+</div>
+<div>
+    <h3 [style.color]="color">Noi dung thay doi mau sac</h3>
+</div>

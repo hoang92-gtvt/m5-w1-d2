@@ -6,12 +6,14 @@ import { AppComponent } from './app.component';
 import { ProductComponent } from './product/product.component';
 import { CaculatorComponent } from './caculator/caculator.component';
 import { FormsModule } from '@angular/forms';
+import { ColorComponent } from './color/color.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ProductComponent,
-    CaculatorComponent
+    CaculatorComponent,
+    ColorComponent
   ],
   imports: [
     BrowserModule,
